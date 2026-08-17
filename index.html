@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NŌRA | Urban Kitchen</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="#home" class="logo">NŌRA</a>
+
+        <nav class="nav-menu">
+
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">Our Story</a>
+            <a href="#reservation">Reservation</a>
+
+        </nav>
+
+        <a href="#reservation" class="nav-btn">
+            Book a Table
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    ✦ MODERN DINING EXPERIENCE
+                </span>
+
+                <h1>
+                    Taste the
+                    <span>Extraordinary.</span>
+                </h1>
+
+                <p>
+                    A modern kitchen where bold flavors,
+                    fresh ingredients and beautiful moments
+                    come together.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#menu" class="btn primary-btn">
+                        Explore Menu
+                    </a>
+
+                    <a href="#reservation" class="btn outline-btn">
+                        Reserve Table
+                    </a>
+
+                </div>
+
+                <div class="hero-info">
+
+                    <div>
+                        <strong>4.9</strong>
+                        <small>★★★★★</small>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div>
+                        <strong>12+</strong>
+                        <small>Years Experience</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="hero-circle"></div>
+
+                <img
+                    src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85"
+                    alt="Nora restaurant food"
+                >
+
+                <div class="floating-card">
+
+                    <span>Chef's Choice</span>
+
+                    <strong>Royal Steak</strong>
+
+                    <small>★★★★★</small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MENU ================= -->
+
+        <section class="menu-section" id="menu">
+
+            <div class="section-heading">
+
+                <span class="eyebrow">
+                    OUR MENU
+                </span>
+
+                <h2>
+                    Crafted with <em>Passion.</em>
+                </h2>
+
+                <p>
+                    Discover our chef's carefully selected dishes.
+                </p>
+
+            </div>
+
+
+            <!-- FILTER -->
+
+            <div class="filters">
+
+                <button class="filter-btn active" data-filter="all">
+                    All
+                </button>
+
+                <button class="filter-btn" data-filter="main">
+                    Main Course
+                </button>
+
+                <button class="filter-btn" data-filter="pizza">
+                    Pizza
+                </button>
+
+                <button class="filter-btn" data-filter="dessert">
+                    Dessert
+                </button>
+
+            </div>
+
+
+            <!-- FOOD GRID -->
+
+            <div class="food-grid">
+
+
+                <!-- FOOD 1 -->
+
+                <article class="food-card" data-category="main">
+
+                    <div class="food-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=85"
+                            alt="Royal Steak"
+                        >
+
+                        <span class="food-badge">
+                            Chef's Choice
+                        </span>
+
+                    </div>
+
+                    <div class="food-content">
+
+                        <div class="food-title">
+
+                            <h3>Royal Steak</h3>
+
+                            <span>৳ 1,250</span>
+
+                        </div>
+
+                        <p>
+                            Premium grilled steak with roasted
+                            vegetables and signature sauce.
+                        </p>
+
+                        <button class="add-cart">
+                            Add to Order +
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- FOOD 2 -->
+
+                <article class="food-card" data-category="pizza">
+
+                    <div class="food-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&q=85"
+                            alt="Nora Special Pizza"
+                        >
+
+                    </div>
+
+                    <div class="food-content">
+
+                        <div class="food-title">
+
+                            <h3>NŌRA Special</h3>
+
+                            <span>৳ 650</span>
+
+                        </div>
+
+                        <p>
+                            Crispy artisan pizza with premium cheese
+                            and fresh herbs.
+                        </p>
+
+                        <button class="add-cart">
+                            Add to Order +
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- FOOD 3 -->
+
+                <article class="food-card" data-category="main">
+
+                    <div class="food-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=800&q=85"
+                            alt="Garden Pasta"
+                        >
+
+                    </div>
+
+                    <div class="food-content">
+
+                        <div class="food-title">
+
+                            <h3>Garden Pasta</h3>
+
+                            <span>৳ 480</span>
+
+                        </div>
+
+                        <p>
+                            Creamy pasta with fresh vegetables,
+                            herbs and parmesan.
+                        </p>
+
+                        <button class="add-cart">
+                            Add to Order +
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- FOOD 4 -->
+
+                <article class="food-card" data-category="pizza">
+
+                    <div class="food-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=85"
+                            alt="Truffle Pizza"
+                        >
+
+                    </div>
+
+                    <div class="food-content">
+
+                        <div class="food-title">
+
+                            <h3>Truffle Pizza</h3>
+
+                            <span>৳ 750</span>
+
+                        </div>
+
+                        <p>
+                            Artisan crust, mozzarella and rich
+                            truffle flavor.
+                        </p>
+
+                        <button class="add-cart">
+                            Add to Order +
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- FOOD 5 -->
+
+                <article class="food-card" data-category="dessert">
+
+                    <div class="food-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&q=85"
+                            alt="Golden Dessert"
+                        >
+
+                    </div>
+
+                    <div class="food-content">
+
+                        <div class="food-title">
+
+                            <h3>Golden Dessert</h3>
+
+                            <span>৳ 350</span>
+
+                        </div>
+
+                        <p>
+                            Soft creamy dessert with a sweet
+                            caramel finish.
+                        </p>
+
+                        <button class="add-cart">
+                            Add to Order +
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- FOOD 6 -->
+
+                <article class="food-card" data-category="dessert">
+
+                    <div class="food-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=85"
+                            alt="Chocolate Cake"
+                        >
+
+                    </div>
+
+                    <div class="food-content">
+
+                        <div class="food-title">
+
+                            <h3>Chocolate Dream</h3>
+
+                            <span>৳ 390</span>
+
+                        </div>
+
+                        <p>
+                            Rich chocolate cake with creamy
+                            chocolate topping.
+                        </p>
+
+                        <button class="add-cart">
+                            Add to Order +
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about-section" id="about">
+
+            <div class="about-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=85"
+                    alt="Nora restaurant interior"
+                >
+
+            </div>
+
+
+            <div class="about-content">
+
+                <span class="eyebrow">
+                    OUR STORY
+                </span>
+
+                <h2>
+                    Food is more than
+                    <em>a meal.</em>
+                </h2>
+
+                <p>
+                    At NŌRA, we believe every plate should tell
+                    a story. Our chefs combine modern techniques
+                    with timeless flavors to create an experience
+                    worth remembering.
+                </p>
+
+                <p>
+                    From carefully selected ingredients to the
+                    final touch, everything is prepared with
+                    passion.
+                </p>
+
+
+                <div class="stats">
+
+                    <div>
+                        <strong>12+</strong>
+                        <span>Years Experience</span>
+                    </div>
+
+                    <div>
+                        <strong>45K+</strong>
+                        <span>Happy Guests</span>
+                    </div>
+
+                    <div>
+                        <strong>30+</strong>
+                        <span>Signature Dishes</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RESERVATION ================= -->
+
+        <section class="reservation" id="reservation">
+
+            <div class="reservation-overlay">
+
+                <div class="reservation-box">
+
+                    <span class="eyebrow">
+                        RESERVATIONS
+                    </span>
+
+                    <h2>
+                        Your table is
+                        <em>waiting.</em>
+                    </h2>
+
+                    <p>
+                        Make your evening memorable.
+                        Reserve your table today.
+                    </p>
+
+
+                    <form id="reservationForm">
+
+                        <div class="form-grid">
+
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Your Name"
+                                required
+                            >
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                placeholder="Phone Number"
+                                required
+                            >
+
+                            <input
+                                type="date"
+                                id="date"
+                                required
+                            >
+
+                            <select id="guests" required>
+
+                                <option value="">
+                                    Number of Guests
+                                </option>
+
+                                <option>1 Guest</option>
+                                <option>2 Guests</option>
+                                <option>3 Guests</option>
+                                <option>4 Guests</option>
+                                <option>5+ Guests</option>
+
+                            </select>
+
+                        </div>
+
+                        <button type="submit" class="btn primary-btn">
+                            Confirm Reservation
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= CART ================= -->
+
+    <div class="cart-button">
+
+        🛒
+
+        <span id="cartCount">
+            0
+        </span>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo">
+                    NŌRA
+                </a>
+
+                <p>
+                    Modern food. Bold flavors.
+                    Unforgettable moments.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Explore</h3>
+
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">Our Story</a>
+                <a href="#reservation">Reservation</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <p>Dhaka, Bangladesh</p>
+                <p>+880 1700-000000</p>
+                <p>hello@norafood.com</p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Opening Hours</h3>
+
+                <p>Saturday — Thursday</p>
+                <p>11:00 AM — 11:00 PM</p>
+
+                <p>Friday</p>
+                <p>3:00 PM — 11:30 PM</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 NŌRA Urban Kitchen.
+            All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
